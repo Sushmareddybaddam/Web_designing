@@ -1,0 +1,304 @@
+<html>
+	<head>
+		<title>Homepage</title>
+		<link rel="stylesheet" type="text/css" href="Homepage1.css"/>
+		<style>
+			input[type=text], input[type=password] {
+				width: 100%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				box-sizing: border-box;
+			}
+
+		input[type="submit"]{
+			background-color:#0ba9ed;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		input[type="submit"]:hover {
+			opacity: 0.8;
+		}
+
+
+		.cancelbtn {
+			width: auto;
+			padding: 10px 18px;
+			background-color: #f44336;
+		}
+
+
+		.imgcontainer {
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+		}
+
+		img.avatar {
+			width: 40%;
+			border-radius: 50%;
+		}
+
+		.container {
+			padding: 16px;
+		}
+
+		span.psw {
+			float: right;
+			padding-top: 16px;
+		}
+
+
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			padding-top: 60px;
+		}
+
+
+		.modal-content {
+			background-color: #fefefe;
+			margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+			border: 1px solid #888;
+			width: 80%; /* Could be more or less, depending on screen size */
+		}
+
+
+		.close {
+			position: absolute;
+			right: 25px;
+			top: 0;
+			color: #000;
+			font-size: 35px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: red;
+			cursor: pointer;
+		}
+
+
+		.animate {
+			-webkit-animation: animatezoom 0.6s;
+			animation: animatezoom 0.6s
+		}
+
+		@-webkit-keyframes animatezoom {
+			from {-webkit-transform: scale(0)} 
+			to {-webkit-transform: scale(1)}
+		}
+			
+		@keyframes animatezoom {
+			from {transform: scale(0)} 
+			to {transform: scale(1)}
+		}
+
+
+		@media screen and (max-width: 300px) {
+			span.psw {
+			   display: block;
+			   float: none;
+			}
+			.cancelbtn {
+			   width: 100%;
+			}
+		}
+		
+		</style>
+		<script type="text/javascript">
+		var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", " ");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	</head>
+	<body>
+	<h1><img src="icon2.png" style="height:70px;width:70px;">&nbsp&nbspMath Tutorial</h1>
+    <h2 id="log"><a href="#" onclick="document.getElementById('id01').style.display='block'">Log in</a></h2>
+    <h2 id="Sign"><a href="validation.html">Sign up</a></h2>
+    <div id="nav">
+		<div class="navbar" id="h">
+			<a href="Homepage.html"><h2>Home</h2></a>
+		</div>
+		<div class="navbar" id="c">
+			<a href="classes.html"><h2>Classes</h2></a>
+		</div>
+		<div class="navbar" id="t">
+			<a href="topics.html"><h2>Topics</h2></a>
+		</div>
+		<div class="navbar" id="p">
+			<a href="practice.html"><h2>Practice Tests</h2></a>
+		</div>
+		<div class="navbar" id="cu">
+			<a href="contactus.html"><h2>Contact Us</h2>
+		</div>
+    </div>
+	
+    <div class="slideshow-container">
+	
+  <div class="mySlides fade" style="display: block;">
+    <div class="numbertext">1 / 5</div>
+    <img src="img38.jpg" style="width: 1000px;
+  height:390px;">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="img41.jpg" style="width: 1000px;
+  height:390px;">       
+    <div class="text"></div>                                                                                                                                                                                          
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="img42.jpg" style="width: 1000px; 
+  height:390px;">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="img39.jpg" style="width: 1000px;
+  height:390px;">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="img40.jpg" style="width: 1000px;
+  height:390px;">
+    <div class="text"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>  
+</div>
+   <div>
+    <img id="image1" src="img16.jpg"/>
+    </div>
+    <p id="content1">Do you need help with math like subtraction, multiplication, division, fractions, 
+decimals, 
+and percents? With an emphasis on images and interactives, our math tutorials make learning math easier. 
+The tutorials are designed to be like a math workbook, so you can practice what you learn directly 
+within the lessons and learn at your own pace.</p>
+   
+    <p id="content2">Mathematics-It may not teach us how to breathe oxygen and how to exhale 
+carbondioxide or to love a friend and forgive an enemy.It may not even help us find our way to our 
+one true love.But it gives us every reason to hope that every problem has a solution.
+    
+	<div id="ab">
+	<h1>About Us</h1>
+	</div>
+	
+	<img id="i" src="img14.jpg"/>
+	
+	<div id="cl">
+	<h2>Classes</h2>
+	</div>
+	
+	
+	<div id="pt">
+	<h2>Pratice tests</h2>
+	</div>
+	
+	
+	<div id="co">
+	<h2>Contact us</h2>
+	</div>
+	
+	
+	<div id="con">
+	<p>Our mission is to provide a free, world-class education to anyone, anywhere.
+     </br></br>
+    Designed by Sushma , Sriketh and Pranitha
+    </p>
+    </div>
+	
+	<div id="id01" class="modal">
+		  <form class="modal-content animate" method="post" action="log.php">
+			<div class="imgcontainer">
+			  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			  <img src="2.png" alt="Avatar" class="avatar">
+			</div>
+
+			<div class="container">
+			
+			  <label><b>Username</b></label>
+			  <input type="text" placeholder="Enter Username" name="uname" required>
+
+			  <label><b>Password</b></label>
+			  <input type="password" placeholder="Enter Password" name="psw" required>
+				
+			  <input type="submit" name="buttoned" value="Login">
+			  <input type="checkbox" checked="checked"> Remember me
+			</div>
+
+			<div class="container" style="background-color:white">
+			  <button type="button" name="button1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			  <span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		  </form>
+	</div>
+	
+    <script>
+
+		var modal = document.getElementById('id01');
+
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+	
+ </body>
+</html>

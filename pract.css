@@ -1,0 +1,31 @@
+body {
+	
+	background-image:url(img17.jpg);
+	background-repeat:no-repeat;
+background-position:center;
+background-size:cover;
+}
+.question_container{
+	max-width: 500px;
+	margin: auto;
+}
+input[type="radio"]{
+	margin: 20px;
+}
+input[type="button"]{
+	margin-left: 120px;
+	padding: 10px;
+	
+}
+#one {
+	font-size:20px;
+}
+#two {
+	font-size:20px;
+}
+#three {
+	font-size:20px;
+}
+#four {
+	font-size:20px;
+}

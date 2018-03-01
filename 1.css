@@ -1,0 +1,19 @@
+body {
+		background-image:url(img17.jpg);
+		margin-top:20px;
+		}
+a {
+		font-size:25px;
+		text-decoration:none;
+		color:2F4F4F;
+		}
+h2 {
+	font-size:30px;
+}
+input[type="button"]{
+	margin-left: 400px;
+	padding: 0px;
+	width:80px;
+	height:30px;
+	
+}
