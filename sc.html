@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Validation</title>
+<style>
+body {
+	font-size:22px;
+	background-image:url(img12.jpg);
+	margin-top:80px;
+	color:black;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+</style>
+<script type="text/javascript">
+function function1()
+{
+var n1=document.form1.name1.value;
+var reg1=/[a-z A-Z]+/;
+var count=0;
+if (!(n1.match(reg1)))
+{
+alert("invalid name</br></br>Name must consist of atleast 6 letters that include capital and small letters");
+count++;
+}
+else 
+{
+alert("Registered Successfully!!");
+}
+
+var n6=document.form1.school1.value;
+var reg6=/[a-z A-Z]+/;
+if (!(n6.match(reg6)))
+{
+alert("invalid school ");
+count++;
+}
+
+var n8=document.form1.dob1.value;
+var reg8=/[0-9]+/;
+if (!(n8.match(reg8)))
+{
+alert("invalid DOB");
+count++;
+}
+
+var n2=document.form1.password1.value;
+var reg2=/[A-Z]+[a-z0-9\@\#\$\*]{6,20}/;
+if (!(n2.match(reg2)))
+{
+alert("invalid password.");
+count++;
+}
+
+var n5=document.form1.cp1.value;
+var reg5=/[A-Z]+[a-z0-9\@\#\$\*]{6,20}/;
+if (!(n5.match(n2)))
+{
+alert("Please enter The same Password");
+}
+
+var n3=document.form1.Email1.value;
+var reg3=/[a-zA-Z0-9_\.]+[\@][a-zA-Z]{2,}[\.][a-zA-Z]?/;
+if (!(n3.match(reg3)))
+{
+alert("invalid email ");
+count++;
+}
+
+var n10=document.form1.address1.value;
+var reg10=/[A-Z a-z 0-9\@\#\$\*]{6,20}/;
+if (!(n10.match(reg10)))
+{
+alert("invalid address.");
+count++;
+}
+
+var n9=document.form1.g1.value;
+var reg9=/[0-9]{2}/;
+if (!(n9.match(reg9)))
+{
+alert("invalid Gender ");
+count++;
+}
+
+var n4=document.form1.Phoneno1.value;
+var reg4=/[0-9]{10}/;
+if (!(n4.match(reg4)))
+{
+alert("invalid phone number ");
+count++;
+}
+
+/*if(n1.match(reg1) && n6.match(reg6) && (n8.match(reg8)) && (n2.match(reg2)) && (n5.match(reg5)) && (n3.match(reg3))
+ && (n10.match(reg10)) && (n9.match(reg9)) && (n4.match(reg4)))
+{
+alert("Registration successfull");
+}*/
+}
+</script>
+</head>
+<body><center>
+<form name="form1" method="post" action="reg.php">
+Name:
+<input type="text" name="name1"><br><br>
+Password:
+<input type="password" name="password1"><br><br>
+Confirm Password:
+<input type="password" name="cp1"><br><br>
+Address:
+<input type="text" name="address1"><br><br>
+School/Institution:
+<input type="text" name="school1"><br><br>
+Email id:
+<input type="email" name="Email1"><br><br>
+Phone number:
+<input type="text" name="Phoneno1"><br><br>
+Date Of Birth:
+<input type="date" name="dob1"><br><br>
+Gender:
+<select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option> </select> <name="g1> <br> <br>
+
+<input type="button" name="button1" value="register" onclick="function1()">
+</form>
+</body>
+</html>
